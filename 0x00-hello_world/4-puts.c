@@ -2,7 +2,7 @@
 /**
  * main - program starting point
  *
- * return: by default returns zero if no error, else non-zero value is returned
+ * Return:zero if no error, else non-zero value is returned
  */
 
 int main(void)
