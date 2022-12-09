@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main: program starting point
+ * main:program starting point
  *
- * retrun: 0 is returned if no errors, else non-zero value
+ * Return:zero is returned if no errors, else non-zero value
  */
 
 int main(void)
