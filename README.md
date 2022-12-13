@@ -1,1 +1,1 @@
-directory 0x00-hello_worldreadme
+0x02-functions_nested_loops
