@@ -1,4 +1,4 @@
-#inlude "main.h"
+#include "main.h"
 /**
  * print_sign: prints the sign of a number
  *
@@ -23,6 +23,7 @@ int print_sign(int n)
 		return (-1);
 	}
 
-	-putchar('\n');
+	_putchar('\n');
+	return (0);
 
 }
