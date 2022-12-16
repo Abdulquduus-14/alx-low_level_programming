@@ -18,7 +18,8 @@
  *      * Return: largest number
  *
  *       */
-int main(void)
+/**
+ * int main(void)
 {
 	int a, b, c, l;
 
@@ -29,7 +30,7 @@ int main(void)
 	printf("%d is the largest number\n", largest);
 
 	return (0);
-}
+} */
 
 
 int largest_number(int a, int b, int c)
