@@ -13,9 +13,9 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
+		n = -1 * n;
 	}
 
-	n = -1 * n;
 
 	if (n >= 48 && n < 58)
 		_putchar(n);
