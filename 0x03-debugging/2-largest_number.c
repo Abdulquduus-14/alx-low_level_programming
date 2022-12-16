@@ -18,6 +18,19 @@
  *      * Return: largest number
  *
  *       */
+int main(void)
+{
+	int a, b, c, l;
+
+	a = 2;
+	b = 5;
+	c = 6;
+	l = largest = largest_number(a, b, c);
+	printf("%d is the largest number\n", largest);
+
+	return (0);
+}
+
 
 int largest_number(int a, int b, int c)
 {
