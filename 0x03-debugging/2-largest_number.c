@@ -25,7 +25,7 @@ int main(void)
 	a = 2;
 	b = 5;
 	c = 6;
-	l = largest = largest_number(a, b, c);
+	l = largest_number(a, b, c);
 	printf("%d is the largest number\n", largest);
 
 	return (0);
@@ -39,7 +39,7 @@ int largest_number(int a, int b, int c)
 	largest = a;
 
 	if (b > largest)
-		largest = y;
+		largest = b;
 	else if (c > largest)
 		largest = c;
 
