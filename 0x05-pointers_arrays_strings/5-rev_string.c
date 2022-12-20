@@ -11,7 +11,7 @@ void rev_string(char *s)
 	char *a;
 	char *b;
 
-	b = a;
+
 	while (*s != '\0')
 	{
 		s++;
@@ -24,7 +24,11 @@ void rev_string(char *s)
 		a++;
 	}
 	*a = '\0';
-	s = b;
+	a--;
+	while (*a)
+	       a--;
+
+	s = a;
 
 	_putchar('\n');
 }
