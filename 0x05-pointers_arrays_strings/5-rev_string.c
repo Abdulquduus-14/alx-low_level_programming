@@ -9,9 +9,9 @@
 void rev_string(char *s)
 {
 	char *a;
-	char *b;
+	
 
-
+	
 	while (*s != '\0')
 	{
 		s++;
@@ -26,8 +26,7 @@ void rev_string(char *s)
 	*a = '\0';
 	a--;
 	while (*a)
-	       a--;
-
+		a--;
 	s = a;
 
 	_putchar('\n');
