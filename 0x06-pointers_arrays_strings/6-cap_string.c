@@ -9,9 +9,6 @@
 
 char *cap_string(char *s)
 {
-	char *a;
-
-	a = s;
 	while (*s != '\0')
 	{
 		if (*s == ',' || *s == ';' || *s == '.' || *s == '!' ||
@@ -26,5 +23,5 @@ char *cap_string(char *s)
 		s++;
 	}
 
-	return (a);
+	return (s);
 }

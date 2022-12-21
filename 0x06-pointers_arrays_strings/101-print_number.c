@@ -7,18 +7,22 @@
  * @n: int to print
  */
 
-void print_number(int n)
+void print_number(int num)
 {
-	if (n < 0)
+	unsigned int n;
+
+	n = num;
+
+	if (num < 0)
 	{
 		_putchar('-');
-		n *= -1;
-	}
-	else
-       	{
-		_putchar(n / 10);
-		_putchar(n % 10);
+		n = -num;
 	}
 
-	_putchar(n + 48);
+	if (n / 10 != 0)
+       	{
+		print_number(n / 10);
+	}
+	_putchar((n % 10) + 48);
+
 }
