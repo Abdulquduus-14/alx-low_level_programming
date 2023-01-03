@@ -23,12 +23,12 @@ void print_diagsums(int *a, int size)
 		for (j = 0; j < size; j++)
 		{
 			if (i == j)
-				total = total + *((int *)a + (i * size) + j);
+				total += *((int *)a + (i * size) + j);
 			else if (i + j == size - 1)
-				sum = sum + *((int *)a + (i * size) + j);
+				sum += *((int *)a + (i * size) + j);
 		}
 	}
 	printf("%u, ", total);
 	printf("%u", sum);
-	printf('\n');
+	printf("\n");
 }
