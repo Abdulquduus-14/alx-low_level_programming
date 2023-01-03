@@ -24,10 +24,10 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 				total += *((int *)a + (i * size) + j);
-			if (i + j == size - 1)
+			else if (i + j == size - 1)
 				sum += *((int *)a + (i * size) + j);
 		}
 	}
-	printf("%lu ,", total);
-	printf("%lu", sum);
+	printf("%u, ", total);
+	printf("%u", sum);
 }
