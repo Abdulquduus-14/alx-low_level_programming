@@ -27,5 +27,7 @@ int _sqrt_recursion(int n)
 		i++;
 		_sqrt_recursion(n);
 	}
+	if (n == 1)
+	return (1);
 	_putchar('\n');
 }
