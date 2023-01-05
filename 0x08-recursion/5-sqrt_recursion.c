@@ -18,6 +18,8 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
+	if (n == 1)
+		return (1);
 	if (i <= n)
 	{
 		if (n == ((n / i) * (n / i)))
@@ -27,7 +29,6 @@ int _sqrt_recursion(int n)
 		i++;
 		_sqrt_recursion(n);
 	}
-	if (n == 1)
-	return (1);
+	return (i);
 	_putchar('\n');
 }
