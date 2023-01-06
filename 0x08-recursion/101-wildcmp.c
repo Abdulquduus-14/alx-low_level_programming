@@ -4,7 +4,7 @@
  * contain the '*' character which can replace any character
  * or string in the first string
  *
- * Rturn: returns 1 if the strings can be considered identical, 
+ * Rturn: returns 1 if the strings can be considered the same,
  * otherwise 0
  * @s1: first string
  * @s2: second string
