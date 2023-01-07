@@ -11,7 +11,9 @@
 
 int main(int argc, char **argv)
 {
-	printf("%d", argc);
+	(void)(argv);
+
+	printf("%d", argc - 1);
 	putchar('\n');
 
 	return (0);
