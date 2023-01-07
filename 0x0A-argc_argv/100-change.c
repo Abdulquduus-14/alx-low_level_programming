@@ -12,7 +12,6 @@
 
 int main(int argc, char *argv[])
 {
-	int c;
 
 	argv[0] = "change";
 	argv[1] =  "cents";
