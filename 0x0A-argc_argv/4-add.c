@@ -11,9 +11,9 @@
 
 int main(int argc, char **argv)
 {
-	int c, total;
+	int total;
 
-	c = 1;
+	
 	total = 0;
 
 	if ((*argv[1] < 48) || (*argv[2] > 58))
