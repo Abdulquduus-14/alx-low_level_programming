@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	if ((*argv[1] == 0) && (*argv[2] == 0))
+	if ((*argv[1] == NULL) && (*argv[2] == NULL))
 		printf("0\n");
 
 	total = atoi(argv[1]) + atoi(argv[2]);
