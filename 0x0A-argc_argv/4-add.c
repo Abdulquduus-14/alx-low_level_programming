@@ -19,7 +19,7 @@ int isnum(char *s)
 {
 	for (; *s != '\0'; s++)
 	{
-		if (*s < 48 || *s > 58)
+		if (*s < '0' || *s > '9')
 			return (0);
 	}
 	return (1);
@@ -34,13 +34,13 @@ int main(int argc, char **argv)
 
 	while (c < argc)
 	{
-		if (isnum(argv[c] == 0)
+		if (isnum(argv[c]) == 0)
 		{
 			puts("Error");
 			return (1);
 		}
 
-		total += atoi(argv[c]);
+		total = total + atoi(argv[c]);
 		c++;
 	}
 
