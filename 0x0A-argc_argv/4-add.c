@@ -9,23 +9,40 @@
  * Return: 0 for success, else non-zero
  */
 
+/**
+ * isnum: checks if a string is a number or not
+ * @s: string to check
+ *
+ * Return: 1 if true, else 0
+ */
+int isnum(char *s)
+{
+	for (; *s != '\0'; s++)
+	{
+		if (*s < 48 || *s > 58)
+			return (0);
+	}
+	return (1);
+}
+
 int main(int argc, char **argv)
 {
-	int total;
+	int total, c;
 
-	
+	c = 1;
 	total = 0;
 
-	if ((*argv[1] < 48) || (*argv[2] > 58))
+	while (c < argc)
 	{
-		printf("Error\n");
-		return (1);
+		if (isnum(argv[c] == 0)
+		{
+			puts("Error");
+			return (1);
+		}
+
+		total += atoi(argv[c]);
+		c++;
 	}
-
-	if ((*argv[1] == NULL) && (*argv[2] == NULL))
-		printf("0\n");
-
-	total = atoi(argv[1]) + atoi(argv[2]);
 
 	printf("%d\n", total);
 
