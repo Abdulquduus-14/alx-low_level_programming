@@ -3,8 +3,7 @@
 #include <stddef.h>
 
 /**
- * create_array: a function that creates an array of chars,
- and initializes it with a specific char.
+ * create_array: a function that creates an array of chars
  * @size : number of characters
  * @c: character value to input
  *
@@ -26,11 +25,9 @@ char *create_array(unsigned int size, char c)
 
 	while (i < size)
 	{
-		
 		*p = c;
-		
 		i++;
-		p++;
+		
 	}
 	return (p);
 }
