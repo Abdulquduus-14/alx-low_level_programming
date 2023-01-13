@@ -1,17 +1,17 @@
 #include <stdlib.h>
 #include <stddef.h>
+#include <stdio.h>
 /**
  * _strlen: get the length of string
  * @s: string to find its length
  *
  * Return: length of string
  */
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-	int c;
-	for (c = 0; *s; c++)
+	unsigned int c;
+	for (c = 0; s[c] != '\0'; c++)
 	{
-		s++;
 	}
 
 	return (c + 1);
@@ -27,7 +27,7 @@ int _strlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int size1, size2, i, j;
+	unsigned int size1, size2, i, j;
 	char *p;
 
 	if (s1 == NULL)
