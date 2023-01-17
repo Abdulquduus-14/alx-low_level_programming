@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "dog.h"
 /**
  * print_dog- a function that prints a struct dog
  * @d: pointer to struct dog
- *
  * Return: nothing for success
  */
 void print_dog(struct dog *d)
@@ -18,7 +18,7 @@ void print_dog(struct dog *d)
 	}
 	else
 		printf("Name: %s\n", d->name);
-	if (d->age == 0)
+	if (d->age < 0)
 		printf("Age: (nil)\n");
 	else
 		printf("Age: %f\n", d->age);

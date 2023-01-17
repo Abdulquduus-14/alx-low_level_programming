@@ -7,7 +7,6 @@
  * @name: name of dog parameter
  * @age: age of dog
  * @owner: name of dog's owner
- *
  * Return: nothing for success
  */
 
