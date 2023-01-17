@@ -12,7 +12,7 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	strcpy(dog->name, name);
-	dog->age = age;
-	strcpy(dog->owner, owner);
+	d->name, name;
+	d->age = age;
+	d->owner, owner;
 }
