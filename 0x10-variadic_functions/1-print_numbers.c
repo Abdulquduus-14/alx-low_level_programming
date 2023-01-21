@@ -3,24 +3,20 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_strings - prints strings, followed by a new line.
+ * print_numbers - prints numbers, followed by a new line.
  * @separator: the string to be printed between the strings
  * @n: number of strings passed to the function
  * return: nothing for success, otherwise non-zero value
  */
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list p;
 	unsigned int i;
-	const char *s;
+	int s;
 
-
-	for (i = 0; i < n; s =  va_arg(p, const char *), i++)
+	for (i = 0; i < n; s = va_arg(p, int), i++)
 	{
-		if (s == NULL)
-			printf("nil");
-		else
-			printf("%s", s);
+		printf("%d", s);
 		if (separator == NULL)
 		{
 		}
@@ -28,5 +24,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 	}
 	va_end(p);
-	_putchar('\n');
+	printf("\n");
 }
