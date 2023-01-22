@@ -16,8 +16,9 @@ void print_all(const char * const format, ...)
 	char *str;
 
 	va_start(p, format);
+	c = 0;
 
-	for (c = 0; format[c] != '\0'; c++)
+	while (format[c] != '\0')
 	{
 		switch (format[c])
 		{
@@ -41,6 +42,7 @@ void print_all(const char * const format, ...)
 		}
 		if ((c < strlen(format) - 1))
 			printf(", ");
+		++c;
 		
 	}
 	printf("\n");
