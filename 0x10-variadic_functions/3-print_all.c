@@ -18,18 +18,18 @@ void print_all(const char * const format, ...)
 	va_start(p, format);
 	c = 0;
 
-	while (format[c] != '\0')
+	while (format && format[c] != '\0')
 	{
 		switch (format[c])
 		{
 			case 'c':
-				printf("%c", va_arg(p, char));
+				printf("%c", va_arg(p, int));
 				break;
 			case 'i':
 				printf("%d", va_arg(p, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(p, float));
+				printf("%f", va_arg(p, double));
 				break;
 			case 's':
 				str = va_arg(p, char *);
@@ -40,11 +40,11 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		if ((c < strlen(format) - 1))
+		if (c < strlen(format))
 			printf(", ");
-		++c;
-		
+		c++;
 	}
-	printf("\n");
 	va_end(p);
+	printf("\n");
+
 }
