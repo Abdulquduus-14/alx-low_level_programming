@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 
 	va_start(p, format);
 
-	for (c = 0; format[c]; c++)
+	for (c = 0; format[c] != '\0'; c++)
 	{
 		switch (format[c])
 		{
@@ -39,7 +39,7 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		if ((c < strlen(str) - 1))
+		if ((c < strlen(format) - 1))
 			printf(", ");
 		
 	}
