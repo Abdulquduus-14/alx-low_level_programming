@@ -1,13 +1,14 @@
 #include <stdlib.h>
-#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
+
 /**
  * print_numbers - prints numbers, followed by a new line.
  * @separator: the string to be printed between the strings
  * @n: number of strings passed to the function
  * return: nothing for success, otherwise non-zero value
  */
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list p;
@@ -16,17 +17,20 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(p, n);
 
-	for (i = 0; i < n; s = va_arg(p, int), i++)
+	for (i = 0; i < (n - 1) && n != 0; i++)
 	{
-		printf("%d", s);
-		if (i == n - 1)
-			continue;
-		if (separator == NULL)
+		if (!separator)
 		{
+			printf("%d", va_arg(p, int));
 		}
 		else
-			printf("%s", separator);
+			printf("%d%s", va_arg(p, int), separator);
 	}
+	if (n)
+		printf("%d\n", va_arg(p, int));
+	else
+		printf("\n");
+		
 	va_end(p);
-	printf("\n");
+
 }
