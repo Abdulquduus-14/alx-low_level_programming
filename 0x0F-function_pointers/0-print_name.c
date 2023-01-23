@@ -9,7 +9,9 @@
  * Return: nothing for success
  */
 
-void print_name(char *name, void (*f)(char *))
+void print_name(char *name, void (*f)(char *n))
 {
+	if (!f || !name)
+		return;
 	f(name);
 }
