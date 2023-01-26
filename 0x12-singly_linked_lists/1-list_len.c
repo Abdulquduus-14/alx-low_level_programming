@@ -9,15 +9,10 @@
 
 size_t list_len(const list_t *h)
 {
-	size_t i = 0;
-	list_t *current;
+	size_t i = 0
 
-	if (!h)
-		return (0);
-	current = (list_t *)malloc(sizeof(current));
-	if (!current)
-		return (0);
-	while (current != NULL)
+
+	while (h != NULL)
 	{
 		current = current->next;
 		i++;
