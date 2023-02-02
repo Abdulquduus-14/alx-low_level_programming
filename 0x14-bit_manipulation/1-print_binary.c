@@ -8,6 +8,6 @@ void print_binary(unsigned long int n)
 {
 	/*unsigned int i, sum;*/
 
-	if (n >= 0 && n < 2)
-		printf("%lu\n", n);
+	/*if (n >= 0 && n < 2)*/
+	printf("%lu\n", n);
 }
