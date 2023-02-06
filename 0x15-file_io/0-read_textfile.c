@@ -8,15 +8,15 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int inputfd, outputfd;
+	int inputfd; /* outputfd;*/
 	/**ssizenumread;*/
-	char buf[BUF_SIZE];
+	/*char buf[BUF_SIZE];*/
 
 
-	if (filename == NULL)
+	if (filename == NULL || letters <= 0)
 		return (0);
 
-	inputfd = open(filename, 0_RDONLY);
+	inputfd = open(filename, 0_RDWR);
 	if (inputfd == -1)
 		return (0);
 

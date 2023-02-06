@@ -5,7 +5,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <stdio.h>
-#ifndef BUF_SIZE 
+
 #define BUF_SIZE 1024
 
 int _putchar(char c);
