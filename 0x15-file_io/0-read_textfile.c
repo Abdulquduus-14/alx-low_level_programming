@@ -8,7 +8,8 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t inputfd, outputfd, numread;
+	int inputfd, outputfd;
+	/**ssizenumread;*/
 	char buf[BUF_SIZE];
 
 
