@@ -9,7 +9,7 @@
 size_t dlistint_len(const dlistint_t *h)
 {
 	size_t length = 0;
-	dlistint_t *current = head;
+	dlistint_t *current = h;
 
 	while (current != NULL)
 	{
